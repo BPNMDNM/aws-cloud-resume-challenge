@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Benjamin Panamdanam: Cloud Resume Challenge</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.v2.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#about">About Me</a></li>
+							<li><a href="#one">Experience & Projects</a></li>
+							<li><a href="#two">Skills</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+				<!-- <section id="intro" class="wrapper style1 fullscreen fade-up">
+					<div class="inner">
+						<h1>Benjamin Panamdanam</h1>
+						<h2>Aspiring Technology Strategist</h2>
+						<h3>bpanamdanam@binghamton.edu</h3>
+						<p>
+							<i class="icon solid fa-envelope"></i>
+							<a href="mailto:bpanamdanam@binghamton.edu">Email</a>
+						</p>
+						<p>
+							<i class="icon brands fa-linkedin"></i>
+							<a href="https://www.linkedin.com/in/benjamin-panamdanam/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+						</p>
+					</div>
+				</section>-->
+
+				<section id="intro" class="wrapper style1 fullscreen fade-up">
+				    <div class="inner">
+				        <h1>Benjamin Panamdanam</h1>
+				        <h2 id="rotating-title">Aspiring Technology Strategist</h2>
+				        <h3>bpanamdanam@binghamton.edu</h3>
+				        <p>
+				            <i class="icon solid fa-envelope"></i>
+				            <a href="mailto:bpanamdanam@binghamton.edu">Email</a>
+				        </p>
+				        <p>
+				            <i class="icon brands fa-linkedin"></i>
+				            <a href="https://www.linkedin.com/in/benjamin-panamdanam/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				        </p>
+						<p style="font-size: smaller;">This page has been viewed <span class="counter-number">...</span> times.</p>
+    					<script>
+    					    const counter = document.querySelector(".counter-number");
+						
+    					    async function updateCounter() {
+    					        let response = await fetch("https://laco4ukxzx4lwbk6gxkz3cpkle0gitzk.lambda-url.us-east-1.on.aws/");
+    					        let data = await response.json();
+    					        counter.innerHTML = `${data.views}`;
+    					    }
+						
+    					    updateCounter();
+    					</script>
+				    </div>
+				</section>
+
+				<script>
+				    document.addEventListener('DOMContentLoaded', function() {
+				        const titles = ["Technology Strategist", "Product Manager", "Technology Consultant", "Project Manager", "Solutions Architect"];
+				        let currentIndex = 0;
+				        const rotatingTitleElement = document.getElementById('rotating-title');
+					
+				        function rotateTitle() {
+				            rotatingTitleElement.textContent = "Aspiring " + titles[currentIndex];
+				            currentIndex = (currentIndex + 1) % titles.length;
+				        }
+					
+				        // Rotate every 3 seconds (adjust as needed)
+				        setInterval(rotateTitle, 3000);
+					
+				        // Set initial title immediately
+				        rotateTitle();
+				    });
+				</script>
+
+				<!-- About Me -->
+				<section id="about" class="wrapper style1 fade-up">
+					<div class="inner">
+						<h2>About Me</h2>
+						<div class="row">
+							<div class="col-4 col-12-medium">
+								<span class="image fit">
+									<img src="images/image.png" alt="Photo of Benjamin Panamdanam" style="border-radius: 50%; border: 3px solid #d4af37;" />
+								</span>
+							</div>
+						<div class="col-8 col-12-medium">
+						<p>
+							Hello! I am a Computer Science Student pursuing my Bachelor’s at SUNY Binghamton, and I am interested in figuring out how to use emerging technologies to find efficient solutions for businesses and organizations. I am currently learning more about areas like Cloud Computing, AI/Automation, and Cybersecurity, among others.	
+						</p>
+
+						<p>
+							My goal is to use my technical background and coursework along with my strong interest in strategy and innovation to bridge the gap between technology and business. Some future roles that I am working towards include those in Project/Product Management, Digital Transformation, Tech Strategy, Cloud Architecture, and other similar careers. I hope you find this website insightful! Feel free to email me or connect with me on LinkedIn to get in touch.
+						</p>
+						<!-- Resume Buttons -->
+						<p style="margin-top: 1.5em;">
+							<a href="assets/files/Panamdanam Benjamin Resume 4.pdf" class="button primary" download>
+							Download Resume
+							</a>
+						<a href="assets/files/Panamdanam Benjamin Resume 4.pdf" class="button" target="_blank" rel="noopener noreferrer">
+							View Resume (PDF)
+						</a>
+						</p>
+
+					</div>
+				</section>
+
+
+				<!-- One -->
+				<section id="one" class="wrapper style2 spotlights">
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Machine Learning Analysis Researcher</h2>
+								<h4>August 2023 – December 2024<br>First Year Research Immersion - Image and Acoustics Analysis (SUNY Binghamton) | Binghamton, NY</h4>
+								<ul>
+									<li>Created deepfake dataset in collaboration with Intel and University of North Carolina presenting final project at Binghamton University Research Fair as well as submitting article to Conference on Computer Vision and Pattern Recognition (CVPR).</li>
+									<li>Automated Python based research pipeline connecting multiple machine learning deepfake models like SimSwap, Roop and Real3DPortrait into existing FF+ dataset collaborating with team of undergraduate researchers.</li>
+									<li>Enhanced deepfake detector robustness by 13% using machine learning tools SciKit, Tensorflow and PyTorch.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>UX/UI Intern</h2>
+								<h4>January 2023 – June 2023<br>Channel HES Inc | Cortlandt Manor, NY</h4>
+								<ul>
+									<li>Enhanced the user interface and optimized the user experience for a global movie and video streaming startup, creating solutions to meet the needs of an international audience.</li>
+									<li>Worked on user reports UX and UI testing using UserTesting software to find more popular and efficient interfaces for both developers and users, increasing user engagement by 7%.</li>
+									<li>Elevated web application functionality through HTML, CSS, and JavaScript with ES6+ features for dynamic client-side interactivity, ensuring an optimal user experience.</li>
+									<li>Implemented structured data markup to improve search visibility and traction, achieving a 11% improvement in SEO performance, while scaling Bootstrap and Git frameworks to ensure adaptability and facilitate collaboration.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Research Intern</h2>
+								<h4>June 2021 – December 2022<br>Itan Lab, Icahn School of Medicine at Mt. Sinai | Remote</h4>
+								<ul>
+									<li>Wrote mock research paper on genetic and phenotypical mutations utilizing the Database of Genotypes and Phenotypes under Department Lead and PHD students.</li>
+									<li>Presented research at 2023 Regeneron WESEF Competition to academic and industry professionals.</li>
+									<li>Leveraged data science platform JuptyerLab, NumPy and Pandas, assisting in statistical projections using the matplotlib and Seaborn data modules.</li>
+									<li>Utilized advanced data analytics techniques, including SQL functions and querying, to parse through genetic databases and find optimal patterns using indexing and subqueries.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Startup Tech Trends Collector – Product & Data Automation Project</h2>
+								<h4>May 2025<br>Personal Project</h4>
+								<ul>
+									<li>Developed an end-to-end system to monitor emerging startup topics by automating data collection from Hacker News using the Algolia API.</li>
+									<li>Designed workflows in n8n to dynamically scrape, parse, and filter relevant tech trend data based on configurable topic inputs.</li>
+									<li>Structured and managed the dataset using a PostgreSQL database hosted on Render, with Beekeeper Studio as the interface for SQL queries and schema control.</li>
+									<li>Cleaned and normalized incoming JSON responses before uploading to the database; outputted structured data into an Excel-compatible format for analysis and visualization.</li>
+									<li>Demonstrated cross-functional thinking by integrating low-code automation, cloud hosting, and data reporting to produce a reusable trend-tracking workflow — applicable to both internal product strategy and market research use cases.</li>
+								</ul> 
+								<p style="margin-top: 15px;">
+									<a href="https://youtu.be/g4lhGbpZsfM" target="_blank" style="text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
+										CLICK HERE FOR DEMO
+									</a>
+								</p>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Cloud Resume Challenge – AWS Infrastructure Project</h2>
+								<h4>June 2025<br>Personal Project</h4>
+								<ul>
+									<li>Built and deployed a personal resume website using AWS S3, CloudFront, DynamoDB, and Lambda, showcasing full-stack cloud architecture and serverless development.</li>
+									<li>Automated infrastructure provisioning and updates with Terraform and CI/CD pipelines, ensuring reproducible, scalable, and version-controlled deployments.</li>
+									<li>Demonstrated production-grade DevOps practices and cloud fluency across frontend hosting, API management, and database integration.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Technology & Strategy Consulting Simulations – Accenture + BCG (Forage)</h2>
+								<h4>June 2025<br>Virtual Consulting Projects</h4>
+								<ul>
+									<li>Completed simulations reflecting real-world consulting tasks: stakeholder interview design, high-level technical planning, and agile story creation for digital transformation initiatives.</li>
+									<li>Developed structured recommendations for enterprise technology strategies, including systems modernization, cloud migration, and innovation roadmaps.</li>
+									<li>Gained insight into the consulting workflows at Accenture and BCG, aligning cross-functional collaboration and client communication with top-tier firm methodologies.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Capture The Flag Cybersecurity Club, SUNY Binghamton</h2>
+								<h4>August 2024 – December 2024</h4>
+								<ul>
+									<li>Analyzed NIST Cybersecurity Framework to understand implementation of GRC policies and risk analysis.</li>
+									<li>Utilized Carnegie Mellon’s PicoCTF to focus on concepts such as binary exploitation, cryptography and forensics.</li>
+									<li>Applied Kali Linux, WireShark, Burp and Ghidra to solve security related challenges.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Association of Computing Machinery, SUNY Binghamton | EBoard - Project Division Manager</h2>
+								<h4>November 2023 – Present</h4>
+								<ul>
+									<li>Made use of HackerRank and DSL to create coding questions for students of all levels at multiple competitions.</li>
+									<li>Instructed students at weekly presentations on Data Structures and Algorithms such as Greedy Algorithm, Stack and Leetcode style problems.</li>
+									<li>Co-head of Project Division, creating standardized method for creating technical projects, from brainstorming to implementation.</li>
+									<li>Spearheaded cross-functional software engineering teams of varying expertise to deliver successful applications, ensuring project success through regular collaboration, strategic troubleshooting, and effective conflict resolution.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>HackBU 2024 Hackathon “Drawing with Fourier Transformations” | Python, PyGame</h2>
+								<h4>April 2023</h4>
+								<ul>
+									<li>Collaborated with group to create GUI application for Hackathon competition.</li>
+									<li>Utilized PyGame and Python to create a program utilizing user input, object oriented programming and multiple states.</li>
+									<li>Translated Fast Fourier Transformations into Python code in order to transform x,y coordinates into Fourier equation.</li>
+								</ul>
+								<p style="margin-top: 15px;">
+									<a href="https://youtu.be/OmDgRUVo_WM" target="_blank" style="text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
+										CLICK HERE FOR DEMO
+									</a>
+								</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- Two -->
+				<section id="two" class="wrapper style3">
+					<div class="inner">
+						<h2>Skills and Technology</h2>
+						<div class="features">
+							<section>
+								<span class="icon solid major fa-laptop-code"></span>
+								<h3>Programming Languages</h3>
+								<p>I have completed classes in Python, Java, C, and C++ focusing on Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and Computer Architecture.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-cloud"></span>
+								<h3>Cloud Technologies</h3>
+								<p>I completed the Cloud Resume Challenge, gaining hands-on experience with cloud platforms and associated technologies.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-microphone"></span>
+								<h3>Presenting and Public Speaking</h3>
+								<p>I have taken public speaking classes for three years and have presented research projects at both college and high school fairs.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-briefcase"></span>
+								<h3>Tech Strategy</h3>
+								<p>I completed Forage mini-internships and courses on tech strategy and digital transformation, working with companies like BCG, Accenture, and Datacom.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-network-wired"></span>
+								<h3>General IT Knowledge</h3>
+								<p>I completed a Cybrary course covering IT fundamentals including networking, Linux, cryptography, encryption, blue/red teaming, VPNs, and related topics.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-graduation-cap"></span>
+								<h3>Continuous Learning</h3>
+								<p>I am open to learning new technologies and skills, demonstrated by my wide yet specialized skill set.</p>
+							</section>
+						</div>
+					</div>
+				</section>
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
